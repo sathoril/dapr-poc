@@ -1,0 +1,67 @@
+version: '3.4'
+
+services:
+  first-api:
+    container_name: first-api
+    build:
+      context: .
+      dockerfile: Dapr.POC.First.API/Dockerfile
+    ports:
+      - 3500:3500
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+        
+  first-api-dapr:
+    image: "daprio/daprd:edge"
+    command:
+      [
+        "./daprd",
+        "-app-id",
+        "firstapi",
+        "-app-port",
+        "80",
+        "-components-path", 
+        "/components",
+        "-log-level", 
+        "debug"
+      ]
+    volumes:
+      - "./components:/components"
+    depends_on:
+      - first-api
+    network_mode: "service:first-api"
+
+  second-api:
+    container_name: second-api
+    build:
+      context: .
+      dockerfile: Dapr.POC.Second.API/Dockerfile
+    ports:
+      - 3501:3501
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+  
+  second-api-dapr:
+    image: "daprio/daprd:edge"
+    command:
+      [
+        "./daprd",
+        "-app-id",
+        "secondapi",
+        "-app-port",
+        "80",
+        "-components-path",
+        "/components",
+        "-log-level",
+        "debug"
+      ]
+    volumes:
+      - "./components:/components"
+    depends_on:
+      - second-api
+    network_mode: "service:second-api"
+       
+
+networks:
+  dapr: null
+

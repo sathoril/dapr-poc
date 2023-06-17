@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dapr.POC.First.API", "Dapr.POC.First.API\Dapr.POC.First.API.csproj", "{9AC9F46B-77EC-4C3E-B0E4-648DDE04F053}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dapr.POC.Second.API", "Dapr.POC.Second.API\Dapr.POC.Second.API.csproj", "{FC3C30DF-2523-4A73-B52B-381B72DFC1DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9AC9F46B-77EC-4C3E-B0E4-648DDE04F053}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AC9F46B-77EC-4C3E-B0E4-648DDE04F053}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AC9F46B-77EC-4C3E-B0E4-648DDE04F053}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AC9F46B-77EC-4C3E-B0E4-648DDE04F053}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC3C30DF-2523-4A73-B52B-381B72DFC1DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC3C30DF-2523-4A73-B52B-381B72DFC1DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC3C30DF-2523-4A73-B52B-381B72DFC1DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC3C30DF-2523-4A73-B52B-381B72DFC1DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

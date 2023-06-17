@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "yYZJoNZtHbv2zGDatda+8QVpfReBRD12Z8MTCcAtG50=",
+  "Source": "Dapr.POC.Second.API",
+  "BasePath": "_content/Dapr.POC.Second.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
